@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&display=swap');
+
+
+body {
+    user-select: none;
+    font-family: "Lexend Deca", sans-serif;
+    color: white;
+    padding: 0;
+    margin: 0
+}
+
+.kariee_container{
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+#chalkboard {
+	position: absolute;
+	top: 0;
+	left: 0;
+    z-index: 1000;
+}

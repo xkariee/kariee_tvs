@@ -1,0 +1,183 @@
+.url_input {
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+
+    background-color: rgba(0, 0, 0, 0.1);
+    width: 100vw;
+    height: 100vh;
+
+
+    .close {
+        position: absolute;
+        right: 1%;
+        top: 1%;
+        font-size: 2.0rem;
+        color: red;
+
+        &:hover {
+            opacity: .5;
+        }
+    }
+
+    .p {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+        justify-content: center;
+        width: fit-content;
+
+        .yt {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            padding: 20px;
+            justify-content: center;
+
+            .volume-container {
+                display: flex;
+                align-items: center;
+                gap: 10px;
+            }
+
+            .volume-icon {
+                font-size: .8em;
+            }
+
+            .volume-slider {
+                -webkit-appearance: none;
+                appearance: none;
+                width: 150px;
+                height: 8px;
+                background: #ddd;
+                border-radius: 5px;
+                transition: background 0.3s;
+                border: unset;
+                outline: unset;
+                flex-grow: 1;
+            }
+
+            .volume-slider::-webkit-slider-thumb {
+                -webkit-appearance: none;
+                appearance: none;
+                width: 15px;
+                height: 15px;
+                background: #333;
+                border: unset;
+                outline: unset;
+                border-radius: 50%;
+                cursor: pointer;
+            }
+
+            .volume-slider::-moz-range-thumb {
+                width: 15px;
+                height: 15px;
+                background: #333;
+                border: 1px solid white;
+                outline: unset;
+                border-radius: 50%;
+                cursor: pointer;
+            }
+
+            .volume-percentage {
+                width: 35px;
+                font-size: .8em;
+                font-weight: 600;
+                text-align: center;
+            }
+        }
+
+        .yt:last-child{
+            margin-top: -\10px;
+        }
+
+        span {
+            font-size: 1.0rem;
+            font-weight: 400;
+            color: white;
+        }
+
+        input[type="text"] {
+            outline: none;
+            border: unset;
+            padding: 10px;
+            color: white;
+            width: 300px;
+            border-radius: 5px;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            background-color: transparent;
+            outline: none;
+            font-size: .8rem;
+            color: white;
+
+            &:focus {
+                border: 1px solid #580096;
+            }
+        }
+
+        .btn {
+            width: 100%;
+            background-color: #580096;
+            color: white;
+            padding: 10px;
+            text-align: center;
+            border-radius: 5px;
+            font-size: .8rem;
+            font-weight: 400;
+
+            &:hover {
+                opacity: .5;
+            }
+        }
+    }
+}
+
+.volume-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-family: Arial, sans-serif;
+}
+
+.volume-icon {
+    font-size: 1.2em;
+}
+
+.volume-slider {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 150px;
+    height: 8px;
+    background: #ddd;
+    border-radius: 5px;
+    outline: none;
+    transition: background 0.3s;
+}
+
+.volume-slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    background: #333;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.volume-slider::-moz-range-thumb {
+    width: 20px;
+    height: 20px;
+    background: #333;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.volume-percentage {
+    font-size: 1em;
+}
